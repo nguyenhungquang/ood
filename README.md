@@ -1,0 +1,1 @@
+Download dữ liệu từ https://github.com/facebookresearch/odin, để vào thư mục `data`
