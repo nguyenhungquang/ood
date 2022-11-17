@@ -1,5 +1,6 @@
 model_name: wideresnet
 dataset: CIFAR10
+batch_size: 64
 fp16: true
 stage_1:
   n_epochs: 50
@@ -7,6 +8,6 @@ stage_1:
   weight_decay: 0.
 stage_2:
   n_epochs: 50
-  lr: 1e-3
+  lr: 1e-5
   weight_decay: 0.
-  lmbda: 50
+  lmbda: 20
