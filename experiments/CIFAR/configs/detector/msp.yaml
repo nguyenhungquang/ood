@@ -1,0 +1,4 @@
+_target_: core.detection.post_hoc.MSPDetector
+_partial_: True
+use_xent: False
+T: null

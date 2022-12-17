@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - _self_
+  - paths: default.yaml
+  - hydra: default.yaml
+  - detector: msp.yaml
+  - net: wrn.yaml
+
+task_name: test_ood_detection
+run_name: ${now:%Y-%m-%d}_${now:%H-%M-%S}
+in_dataset: cifar10
+num_to_avg: 3
+test_bs: 400
+prefetch: 2
+ngpu: 1
+save_result: True
+
+ckpt_path: ???

@@ -1,0 +1,4 @@
+_target_: core.detection.post_hoc.ODINDetector
+_partial_: True
+T: 100
+noise_magnitude: 0.005 

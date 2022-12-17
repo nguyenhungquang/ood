@@ -1,0 +1,3 @@
+_target_: core.detection.post_hoc.LocalEnsembleDetector
+_partial_: True
+m: 10

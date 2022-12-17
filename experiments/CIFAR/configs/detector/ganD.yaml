@@ -1,0 +1,2 @@
+_target_: core.detection.post_hoc.GANDDetector
+_partial_: True
