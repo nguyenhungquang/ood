@@ -98,9 +98,7 @@ def get_ood_datasets(DATA_ROOT: Path, in_dataset: str):
     OOD_DATASETS = {
         "SVHN": dset.SVHN(root= DATA_ROOT / 'svhn', split="test",
                         transform=trn.Compose(
-                            [
-                            trn.Resize(64), 
-                            trn.ToTensor(), 
+                            [trn.ToTensor(), 
                             trn.Normalize(CIFAR10_MEAN, CIFAR10_STD)])),
         "LSUN-C": ImageFolderOOD(root= DATA_ROOT / 'data_ood_detection' / 'LSUN', 
                             transform=trn.Compose([trn.ToTensor(), trn.Normalize(CIFAR10_MEAN, CIFAR10_STD)])),
